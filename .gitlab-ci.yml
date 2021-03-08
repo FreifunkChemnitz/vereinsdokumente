@@ -1,0 +1,21 @@
+image: debian:sid
+
+pages:
+  stage: deploy
+  script:
+    - apt-get update
+    - apt-get -y install inkscape texlive-full
+    - inkscape --export-dpi=1200 --export-filename=ffc.png ffc.svg
+    - lualatex Freifunk-Beitragsordnung.tex
+    - pdflatex Freifunk-Beitragsordnung.tex
+    - xelatex Freifunk-Beitragsordnung.tex
+    - lualatex Freifunk-Satzung.tex
+    - pdflatex Freifunk-Satzung.tex
+    - xelatex Freifunk-Satzung.tex
+    - mkdir .public
+    - cp LICENSE *.pdf *.odt .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+
