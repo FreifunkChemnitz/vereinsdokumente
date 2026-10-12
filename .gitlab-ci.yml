@@ -12,8 +12,11 @@ pages:
     - lualatex Freifunk-Satzung.tex
     - pdflatex Freifunk-Satzung.tex
     - xelatex Freifunk-Satzung.tex
+    - lualatex Mitgliedsantrag.tex
+    - pdflatex Mitgliedsantrag.tex
+    - xelatex Mitgliedsantrag.tex
     - mkdir .public
-    - cp LICENSE *.pdf *.odt .public
+    - cp LICENSE *.pdf .public
     - mv .public public
   artifacts:
     paths:

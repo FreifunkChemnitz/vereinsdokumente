@@ -1,0 +1,66 @@
+\documentclass[a4paper,DIV=10,12pt]{scrartcl}
+
+\usepackage{iftex}
+\ifPDFTeX
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+\fi
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{array}
+
+\newcommand{\nevname}{Freifunk Chemnitz}
+\newcommand{\evname}{\nevname \ e.V.}
+\newcommand{\logo}{\includegraphics[width=2.6cm]{ffc.png}}
+\newcommand{\feld}{\strut\hrulefill}
+\newcommand{\kaestchen}{$\square$}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\lfoot{\parbox[t]{\textwidth}{\footnotesize\raggedright
+	\evname \\
+	Augustusburger Str. 102 \\
+	09126 Chemnitz \\
+	Vorstand: Christoph Krapp (Vorsitzender), Steffen Förster (Schatzmeister), \mbox{Raziel Kretschmer (Schriftführer)} \\
+	Kontoinhaber: Steffen Förster \\
+	Konto: 1017306299 BLZ: 12030000 DKB Berlin \\
+	IBAN: DE30 1203 0000 1017 3062 99 BIC: BYLADEM1001}}
+
+\logo
+
+\section*{Mitgliedsantrag \nevname}
+
+Hiermit beantrage ich die Mitgliedschaft im Verein "`\nevname"' zur Förderung der Forschung und Wissenschaft bezüglich kabelloser und kabelgebundener Computernetzwerke.
+
+{\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{@{}>{\raggedright}p{0.27\textwidth}p{0.68\textwidth}@{}}
+	\textbf{Name:} & \feld \\
+	\textbf{Vorname:} & \feld \\
+	\textbf{E-Mail:} & \feld \\
+	\textbf{Art der Mitgliedschaft:} & \kaestchen\ normale Mitgliedschaft (10 Euro monatlich) \newline
+	                                   \kaestchen\ Fördermitgliedschaft (50 Euro monatlich) \\
+	Postadresse: & \feld \newline \feld \\
+	Geburtsdatum: & \feld \\
+\end{tabular}}
+
+Die fett markierten Felder sind obligatorisch.
+
+Hiermit nehme ich zur Kenntnis, dass der Verein die persönlichen Daten zur Verwaltung der Mitgliedschaft speichert und verarbeitet.
+
+Die nach der aktuell gültigen Beitragsordnung fälligen Mitgliedsbeiträge überweise ich selbstständig entweder monatlich oder den kompletten Jahresbetrag einmal jährlich auf das unten angegebene Konto. Eine Zahlung jährlich im voraus ist ebenfalls möglich.
+
+\vspace{2em}
+
+\begin{tabular}{@{}p{0.4\textwidth}p{0.1\textwidth}p{0.4\textwidth}@{}}
+	\feld & & \feld \\
+	Datum, Ort & & Unterschrift \\
+\end{tabular}
+
+\end{document}

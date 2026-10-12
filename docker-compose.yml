@@ -1,0 +1,6 @@
+services:
+  tex:
+    image: texlive/texlive:latest-small
+    working_dir: /work
+    volumes:
+      - .:/work
