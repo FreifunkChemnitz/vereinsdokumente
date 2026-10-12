@@ -5,7 +5,7 @@ pages:
   script:
     - apt-get update
     - apt-get -y install inkscape texlive-full
-    - inkscape --export-dpi=1200 --export-filename=ffc.png ffc.svg
+    - inkscape --export-dpi=300 --export-filename=ffc.png ffc.svg
     - lualatex Freifunk-Beitragsordnung.tex
     - pdflatex Freifunk-Beitragsordnung.tex
     - xelatex Freifunk-Beitragsordnung.tex

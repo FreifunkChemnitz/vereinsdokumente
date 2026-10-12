@@ -1,6 +1,19 @@
 services:
   tex:
-    image: texlive/texlive:latest-small
+    build:
+      dockerfile_inline: |
+        FROM texlive/texlive:latest-small
+        RUN tlmgr install textpos
+    working_dir: /work
+    volumes:
+      - .:/work
+
+  inkscape:
+    build:
+      dockerfile_inline: |
+        FROM alpine:3
+        RUN apk add --no-cache inkscape
+    entrypoint: ["inkscape"]
     working_dir: /work
     volumes:
       - .:/work
