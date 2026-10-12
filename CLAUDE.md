@@ -26,4 +26,5 @@ docker compose run --rm tex lualatex <Dokument>.tex
 
 ## Git
 
-- Commits im Conventional-Commits-Format, Änderungen über Branch und Pull Request auf GitHub (`FreifunkChemnitz/vereinsdokumente`).
+- Commit-Nachrichten auf Deutsch, im Conventional-Commits-Format (Typ und Scope bleiben englisch).
+- Änderungen über Branch und Pull Request auf GitHub (`FreifunkChemnitz/vereinsdokumente`).
