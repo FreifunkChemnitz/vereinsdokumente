@@ -19,6 +19,7 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em}
+\addtolength{\footskip}{-1em}
 
 \begin{document}
 \pagestyle{fancy}
@@ -29,8 +30,11 @@
 	Augustusburger Str. 102 \\
 	09126 Chemnitz \par
 	\vspace{0.5em}
-	\settowidth{\hangindent}{Vorstand: }\hangafter=1
-	Vorstand: Christoph Krapp (Vorsitzender), Steffen Förster (Schatzmeister), \mbox{Raziel Kretschmer (Schriftführer)} \par
+	\begin{tabular}[t]{@{}l@{ }l@{}}
+		Vorstand: & Christoph Krapp (Vorsitzender) \\
+		          & Steffen Förster (Schatzmeister) \\
+		          & Raziel Kretschmer (Schriftführer)
+	\end{tabular} \par
 	\vspace{0.5em}
 	Kontoinhaber: Steffen Förster \\
 	Konto: 1017306299 BLZ: 12030000 DKB Berlin \\
