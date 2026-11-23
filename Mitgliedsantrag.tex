@@ -13,7 +13,7 @@
 
 \newcommand{\nevname}{Freifunk Chemnitz}
 \newcommand{\evname}{\nevname \ e.V.}
-\newcommand{\logo}{\includegraphics[width=2.6cm]{ffc.png}}
+\newcommand{\logo}{\includegraphics[width=2.86cm]{ffc.png}}
 \newcommand{\feld}{\strut\hrulefill}
 \newcommand{\kaestchen}{$\square$}
 
@@ -40,9 +40,11 @@
 	Konto: 1017306299 BLZ: 12030000 DKB Berlin \\
 	IBAN: DE30 1203 0000 1017 3062 99 BIC: BYLADEM1001}}
 
-\logo
-
-\section*{Mitgliedsantrag \nevname}
+\begin{minipage}[c]{2.86cm}\logo\end{minipage}%
+\hspace{1em}%
+\begin{minipage}[c]{\dimexpr\textwidth-2.86cm-1em\relax}
+	\usekomafont{disposition}\usekomafont{section}Mitgliedsantrag \nevname
+\end{minipage}
 
 Hiermit beantrage ich die Mitgliedschaft im Verein "`\nevname"' zur Förderung der Forschung und Wissenschaft bezüglich kabelloser und kabelgebundener Computernetzwerke.
 
