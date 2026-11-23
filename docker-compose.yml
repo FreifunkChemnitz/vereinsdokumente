@@ -17,3 +17,13 @@ services:
     working_dir: /work
     volumes:
       - .:/work
+
+  pdftoppm:
+    build:
+      dockerfile_inline: |
+        FROM alpine:3
+        RUN apk add --no-cache poppler-utils
+    entrypoint: ["pdftoppm"]
+    working_dir: /work
+    volumes:
+      - .:/work

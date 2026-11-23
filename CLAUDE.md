@@ -9,6 +9,7 @@ Nur über Docker, nichts lokal installieren:
 ```bash
 docker compose run --rm inkscape --export-dpi=300 --export-filename=ffc.png ffc.svg
 docker compose run --rm tex lualatex <Dokument>.tex
+docker compose run --rm pdftoppm -r 70 -png -singlefile <Dokument>.pdf preview  # Vorschau als preview.png
 ```
 
 - `ffc.png` wird aus `ffc.svg` erzeugt und ist per `.gitignore` ausgeschlossen. Ohne die Datei schlägt jeder Build fehl.
