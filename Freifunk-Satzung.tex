@@ -11,23 +11,22 @@
 \newcommand{\evname}{\nevname \ e.V.}
 \newcommand{\datum}{26.09.2026}
 \newcommand{\logo}{\smash{\includegraphics[height=1.2cm]{ffc.png}}}
-\newcommand{\biglogo}{\begin{figure}[h] \includegraphics[width=0.8\textwidth]{ffc.png} \end{figure}}
-
-\title{Vereinssatzung}
-\author{\nevname}
-\date{\datum}
+\newcommand{\biglogo}{\includegraphics[width=3.15cm]{ffc.png}}
 
 \begin{document}
-\pagestyle{empty}
-\maketitle
-
 \pagestyle{fancy}
 \lhead{\logo}
 \rhead{Vereinssatzung \nevname}
+\thispagestyle{empty}
 
-\begin{textblock}{4}(2.3,-5.4)
-\biglogo
-\end{textblock}
+\noindent
+\begin{minipage}[c]{3.15cm}\biglogo\end{minipage}%
+\hspace{1em}%
+\begin{minipage}[c]{\dimexpr\textwidth-3.15cm-1em\relax}
+	{\usekomafont{disposition}\LARGE Vereinssatzung \nevname\par}
+	\medskip
+	\datum
+\end{minipage}
 
 \section{Name und Sitz des Vereins, Geschäftsjahr}
 \begin{enumerate}

@@ -16,8 +16,8 @@ docker compose run --rm pdftoppm -r 70 -png -singlefile <Dokument>.pdf preview  
 - Das Logo mit 300 dpi exportieren; höhere Auflösung bläht nur die PDFs auf.
 - Die PDFs sind eingecheckt. Nach jeder Änderung an einer `.tex`-Datei das PDF neu bauen und mit committen.
 - Das Datum von Satzung und Beitragsordnung kommt aus `\datum` (Beschlussdatum, aktuell 26.09.2026), nicht aus `\today`.
-- Satzung: Das Logo in der Kopfzeile steht in `\smash`, damit es nach oben in den Rand ragt und nicht über den Text rutscht.
-- Beitragsordnung und Mitgliedsantrag: kein Titelblatt, Logo (Mitgliedsantrag 2,86 cm, Beitragsordnung 3,15 cm) mit Überschrift daneben oben auf der Seite. Beide müssen auf eine Seite passen.
+- Kein Titelblatt: Logo mit Überschrift daneben oben auf der ersten Seite (Satzung und Beitragsordnung 3,15 cm, Mitgliedsantrag 2,86 cm). Beitragsordnung und Mitgliedsantrag müssen auf eine Seite passen.
+- Satzung ab Seite 2: Das kleine Logo in der Kopfzeile steht in `\smash`, damit es nach oben in den Rand ragt und nicht über den Text rutscht.
 - Die GitLab-CI baut mit lualatex, pdflatex und xelatex. Neue Dokumente müssen mit allen drei Engines kompilieren.
 
 ## Inhaltliche Regeln
