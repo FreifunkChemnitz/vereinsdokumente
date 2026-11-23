@@ -15,8 +15,9 @@ docker compose run --rm pdftoppm -r 70 -png -singlefile <Dokument>.pdf preview  
 - `ffc.png` wird aus `ffc.svg` erzeugt und ist per `.gitignore` ausgeschlossen. Ohne die Datei schlägt jeder Build fehl.
 - Das Logo mit 300 dpi exportieren; höhere Auflösung bläht nur die PDFs auf.
 - Die PDFs sind eingecheckt. Nach jeder Änderung an einer `.tex`-Datei das PDF neu bauen und mit committen.
-- Das Datum auf dem Titelblatt von Satzung und Beitragsordnung kommt aus `\datum` (Beschlussdatum, aktuell 26.09.2026), nicht aus `\today`.
-- Das Logo in der Kopfzeile steht in `\smash`, damit es nach oben in den Rand ragt und nicht über den Text rutscht.
+- Das Datum von Satzung und Beitragsordnung kommt aus `\datum` (Beschlussdatum, aktuell 26.09.2026), nicht aus `\today`.
+- Satzung: Das Logo in der Kopfzeile steht in `\smash`, damit es nach oben in den Rand ragt und nicht über den Text rutscht.
+- Beitragsordnung und Mitgliedsantrag: kein Titelblatt, Logo (2,86 cm) mit Überschrift daneben oben auf der Seite. Beide müssen auf eine Seite passen.
 - Die GitLab-CI baut mit lualatex, pdflatex und xelatex. Neue Dokumente müssen mit allen drei Engines kompilieren.
 
 ## Inhaltliche Regeln

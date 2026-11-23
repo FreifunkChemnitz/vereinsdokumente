@@ -1,4 +1,4 @@
-\documentclass[a4paper,DIV10,12pt,headsepline]{scrartcl}
+\documentclass[a4paper,DIV=14,12pt]{scrartcl}
 
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
@@ -9,20 +9,19 @@
 \newcommand{\nevname}{Freifunk Chemnitz}
 \newcommand{\evname}{\nevname \ e.V.}
 \newcommand{\datum}{26.09.2026}
-\newcommand{\logo}{\smash{\includegraphics[height=1.2cm]{ffc.png}}}
-\newcommand{\biglogo}{\begin{figure}[h] \includegraphics[width=0.8\textwidth]{ffc.png} \end{figure}}
-
-\title{Beitragsordnung}
-\author{\nevname}
-\date{\datum}
+\newcommand{\logo}{\includegraphics[width=2.86cm]{ffc.png}}
 
 \begin{document}
 \pagestyle{empty}
-\maketitle
 
-\pagestyle{fancy}
-\lhead{\logo}
-\rhead{Beitragsordnung \nevname}
+\noindent
+\begin{minipage}[c]{2.86cm}\logo\end{minipage}%
+\hspace{1em}%
+\begin{minipage}[c]{\dimexpr\textwidth-2.86cm-1em\relax}
+	{\usekomafont{disposition}\usekomafont{section}Beitragsordnung \nevname\par}
+	\medskip
+	\datum
+\end{minipage}
 
 \section{Allgemeines}
 Die Mittel für die Verwirklichung der Zwecke des Vereins sollen durch Beiträge und sonstige Zuwendungen aufgebracht werden. Durch die Zahlung des Mitgliedsbeitrages entstehen für die Mitglieder keine Ansprüche auf Sach- oder anders geartete Leistungen. 
